@@ -8,7 +8,7 @@ import {FaFacebook,FaInstagram,FaLinkedin,FaTwitter} from "react-icons/fa"
 const Home = () => {
     const [data,setData]=useState([])
 const fetchData=async()=>{
-    const response=await fetch('https://watch-store-react-js.herokuapp.com/watch/FeaturedProducts')
+    const response=await fetch('https://watch-store-react-js.herokuapp.com/api/watch/FeaturedProducts')
     const json=await response.json()
     setData(json)
 } 
