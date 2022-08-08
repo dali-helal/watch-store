@@ -14,9 +14,9 @@ nav{
     position: sticky;
     top: 0px;
     z-index: 999;
-    padding-inline:2.5rem ;
     padding-top: 10px ;
     background: #f4f4f4;
+    padding-inline: 1.5vw;
 }
 .site-name a{
     display: flex;

@@ -9,7 +9,7 @@ const PageProductDetails = () => {
     const dispatch=useDispatch()
     const [data,setData]=useState([])
     const fetchData= async ()=>{
-      const res= await fetch(`http://localhost:4000/api/watch/${id}`)
+      const res= await fetch(`https://watch-store-react-js.herokuapp.com/api/watch/${id}`)
       const json = await res.json() 
       console.log(json)
       setData(json)
