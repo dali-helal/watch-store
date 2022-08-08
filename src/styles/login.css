@@ -1,0 +1,152 @@
+.container-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2)  ;
+}
+.login-form{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px 0px ;
+}
+.login-form .email,.login-form .password{
+   border-left: 5px solid #119DFF; 
+   background: #F3F4F6;
+   display: flex;
+   align-items: center;
+   width: 80%;
+   padding: 10px;
+   margin: 15px;
+}
+.login-form .email input,.login-form .password input {
+    padding: 5px;
+    margin-left: 10px;
+    width: 250px;
+    border: 0px;
+    outline: none;
+    background: none;
+    color:#777777;
+    font-size: 15px;
+    font-weight: 600;
+}
+.icon-login{
+    color:#777777;
+}
+.login-form  h6{
+    color: red;
+    font-size: 13px;
+    width: 80%;
+}
+.login-form h4{
+    width: 80%;
+    font-size: 15px;
+    padding: 5px;
+    color:#777777;
+    cursor: pointer;
+}
+.login-btn{
+    padding: 10px ;
+    width: 80%;
+    background: #119DFF;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px;
+}
+.sign-up> div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#777777;
+    font-size: 15px;
+}
+.sign-up> div h4{
+    margin: 5px ;
+}
+.sign-up> div a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.sign-up> div h5{
+    color: #119DFF;
+}
+.login-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.icon-facebook,.icon-gmail,.icon-twitter{
+    margin: 5px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon-facebook{
+   background: #405498;
+   color: #FFFFFF;
+}
+.icon-twitter{
+   background-color:#1DA1F2; 
+   color :#FFFFFF;
+}
+.icon-gmail{
+  background: #F23D2F;
+  color: #FFFFFF;
+}
+.login-with{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login-with{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login-with h6{
+    padding: 5px;
+    font-size: 15px;
+    color: #777777;
+    font-weight: 700;
+}
+#login-with hr{
+    width: 30px;
+    border :2px solid #777777;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+@media (min-width : 700px) and (max-width:1024px){
+    .container-login{
+        transform: scale(1.5);
+    }
+    .sign-up> div h4{
+        font-size: 20px ;
+    }
+} 
+@media (min-width : 281px) and (max-width:667px){
+  .container-login{
+    transform: scale(0.86);
+    }
+}
+@media (width : 320px){
+    .container-login{
+      transform: scale(0.75);
+      }
+  }
+@media (max-width :280px){
+    .container-login{
+        transform: scale(0.65);
+    }
+}

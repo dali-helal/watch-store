@@ -4,10 +4,11 @@ import Image from  '../logo/1.png'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from "react";
 import ProductDetails from "./ProductDetails"
+import {FaFacebook,FaInstagram,FaLinkedin,FaTwitter} from "react-icons/fa"
 const Home = () => {
     const [data,setData]=useState([])
 const fetchData=async()=>{
-    const response=await fetch('http://localhost:4000/api/watch/FeaturedProducts')
+    const response=await fetch('https://watch-store-react-js.herokuapp.com/watch/FeaturedProducts')
     const json=await response.json()
     setData(json)
 } 
@@ -49,6 +50,22 @@ useEffect(()=>{
             </Link>
             
         </section >
+        
+        <div className="footer">
+         
+            <div>
+                for more information ,Follow us on :
+            </div>
+            <div className="footer-icons">
+                 <FaFacebook  size={"2rem"} />
+                 <FaInstagram size={"2rem"}/>
+                 <FaTwitter size={"2rem"}/>
+                 <FaLinkedin size={"2rem"}/>
+            </div>
+            <div >
+                Copyright  &copy; 2022 Dali Ben Helal All rights reserved  
+            </div>
+        </div>
      </>;
 }
  

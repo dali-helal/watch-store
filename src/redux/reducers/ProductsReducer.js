@@ -2,8 +2,8 @@ import { ActionTypes } from "../constants/action-types";
 import produce from "immer";
 const initialState = {
     products: [], 
-    quantity: 0,
-    total: 0
+    Quantity: 0,
+    totalPrice: 0
   }
   
   export const productsReducer = (state = initialState, action) => {
@@ -19,14 +19,14 @@ const initialState = {
           if (item) 
           {
             item.quantity++;
-            draftState.total = parseFloat(draftState.total) + parseFloat(Product.price);
-            draftState.quantity++;
+            draftState.totalPrice = parseFloat(draftState.totalPrice) + parseFloat(Product.price);
+            draftState.Quantity++;
           }
           else 
           {
             draftState.products.push(Product);
-            draftState.quantity++;
-            draftState.total = parseFloat(draftState.total) + parseFloat(Product.price);
+            draftState.Quantity++;
+            draftState.totalPrice = parseFloat(draftState.totalPrice) + parseFloat(Product.price);
           }
         });
       case ActionTypes.DECREMENT_QUANTITY:
@@ -42,8 +42,8 @@ const initialState = {
                 product.quantity--;
               }
             })
-            draftState.quantity--;
-            draftState.total -= parseFloat(item.price);
+            draftState.Quantity--;
+            draftState.totalPrice-= parseFloat(item.price);
           }
   
         })
@@ -59,16 +59,16 @@ const initialState = {
               product.quantity++;
             }
           })
-          draftState.quantity++;
-          draftState.total += parseFloat(item.price);
+          draftState.Quantity++;
+          draftState.totalPrice+= parseFloat(item.price);
         })
         case ActionTypes.REMOVE_SELECTED_PRODUCT:
             return produce(state,(draftState)=>{
                 let id = action.payload;
                 let item = draftState.products.find((product) => product.id === id);
                 draftState.products = draftState.products.filter((product) => product.id !== id);
-                draftState.quantity-=item.quantity
-                draftState.total -= parseFloat(item.price * item.quantity)
+                draftState.Quantity-=item.quantity
+                draftState.totalPrice-= parseFloat(item.price * item.quantity)
             })
       default:
         return state;

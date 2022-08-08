@@ -6,7 +6,7 @@ const SearchBar = () => {
     const [itemSearch, setItemSearch] = useState('')
     const [filteredData, setFilteredData] = useState([]);
     const fetchData = async () => {
-        const res = await fetch('http://localhost:4000/api/watch')
+        const res = await fetch('https://watch-store-react-js.herokuapp.com/api/watch')
         const json = await res.json()
         setData(json)
     }
