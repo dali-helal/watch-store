@@ -19,27 +19,26 @@
     align-items: center;
     justify-content: center;
     height: 25px;
-    padding: 15px 10px;
+    padding: 20px 0px ;
     background: #FFFFFF;
     margin-left: 22px;
 }
 .search input {
     border: 0px ;
-    font-size: 15px ;
+    font-size: 13px ;
     font-weight: 400;
     outline: none;
     background: #FFFFFF;
-    width: 150px;
-    margin-right: 10px;
+    width: 180px;
+    margin: 0px 5px;
 }
  .search .icon-search{
     background :white ; 
-    margin-left: 10px;
     color: #989898;  
-    margin-right: 10px;
+    margin: 0px 10px;
 }
 .btn-filter-mobile{
-   padding: 10px 20px ;
+   padding: 15px 20px   ;
    background : #119DFF;
    color: #FFFFFF;
    border-radius: 10px;
@@ -87,6 +86,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 10px ;
+        padding-inline:1rem;
     }    
     .list{
         display: block;
