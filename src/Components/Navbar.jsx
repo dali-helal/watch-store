@@ -16,7 +16,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className='icon'>
-        <SearchBar />
+         <SearchBar/>
         <a href='/Login'>
           <FaUser className='icons' size={"30px"} />
         </a>

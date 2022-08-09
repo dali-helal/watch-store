@@ -1,102 +1,19 @@
-.silder-img{
+.slider-image{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    height: 350px;
+    margin: 20px 0px ;
+    padding-inline :1vw ;
 }
-.image{
-    width: 100%;
-    margin: 0 auto;
-    height: 300px;
-    padding: 10px ;
-}
-.right-arrow{
-    position: absolute;
-    top:34% ;
-    right: 20px;
-    font-size: 1.5rem;
-    background: none;
-    color: white;
-    cursor: pointer;
-    user-select: none;
-    z-index: 250;
-}
-.left-arrow{
-    position: absolute;
-    top:34% ;
-    left: 20px;
-    font-size: 1.5rem;
-    background: none;
-    color: white;
-    z-index: 250;
-    cursor: pointer;
-    user-select: none;
-}
-@media (min-width : 700px) and (max-width:1024px){
-    .right-arrow ,.left-arrow{
-        top:34%
-    }
-    .image{
-        height: 300px;
-    }
-}
+@media (min-width :700px ) and (max-width :1024px ){
 
-@media (min-width : 768px)  and (max-width : 820px)  {
-    .right-arrow ,.left-arrow{
-        top:15% ; 
-    } 
 }
-@media (width : 912px) {
-    .right-arrow ,.left-arrow{
-        top:18% ; 
-    } 
-}
+@media (min-width :281px ) and (max-width :680px ){
+    .slider-image{
 
-@media (min-width : 281px) and (max-width:660px){
-    .right-arrow ,.left-arrow{
-        top:27% ; 
-    }
-    .image{
-        height: 160px;
+        height: 200px;
+      
     }
 }
-@media (width : 375px) {
-    .right-arrow ,.left-arrow{
-        top:30% ; 
-    } 
-}
-@media (width : 414px) {
-    .right-arrow ,.left-arrow{
-        top:22% ; 
-    } 
-}
-@media (width : 390px) {
-    .right-arrow ,.left-arrow{
-        top:23% ; 
-    } 
-}
-@media (width :  393px) {
-    .right-arrow ,.left-arrow{
-        top:24% ; 
-    } 
-}
-@media (width :  412px) {
-    .right-arrow ,.left-arrow{
-        top:22% ; 
-    } 
-}
-@media (width :  425px) {
-    .right-arrow ,.left-arrow{
-        top:43% ; 
-    } 
-}
-@media (max-width :280px){
- 
-    .right-arrow ,.left-arrow{
-        top:47% ; 
-    }
-    .image{
-        height: 180px;
-    }
+@media (max-width :281px ) {
+    
 }

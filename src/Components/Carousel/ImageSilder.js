@@ -14,12 +14,12 @@ const ImageSilder = ({sildes}) => {
     SetCurrent(current===0? length-1: current-1)
    }
 
-   /*useEffect(() => {
+   useEffect(() => {
     const timer = setTimeout(() => {
         SetCurrent(current===length-1 ? 0 : current+1)
     }, 3000);
     return ()=>{clearTimeout(timer)}
-  });*/
+  });
 
    if(!Array.isArray(sildes) || sildes.length<=0){
     return null

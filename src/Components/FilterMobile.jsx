@@ -4,8 +4,9 @@ import {useDispatch } from "react-redux"
 import{addPropFilter} from "../redux/actions/FilterProduct"
 import {FaCaretDown } from "react-icons/fa"
 import "../styles/filterMobile.css"
+import { useEffect } from "react"
 const FilterMobile = () => {
-   const [val,setVal]=useState([0,1200])
+   const [valmobile,setValMobile]=useState([0,1200])
     const dispatch=useDispatch()
     const [filter,setFilter]=useState({
       FilterColor:[],
@@ -14,10 +15,9 @@ const FilterMobile = () => {
       FilterMark :[]
     })
     const updateValFilter=(newVal)=>{
-          setVal(newVal)
-          setFilter({...filter,FilterPrice :[val[0],val[1]]})
+        setValMobile(newVal)
+         // setFilter({...filter,FilterPrice :[val[0],val[1]]})
     }
-    
     const handleFilter=(e)=>{
       const name=e.target.name
       const value=e.target.value
@@ -87,10 +87,11 @@ const FilterMobile = () => {
       <div className="container-price-mobile">
                  <div className="slider-price-mobile">
                  <Slider 
-                   valueLabelDisplay="auto"  style={{width : 100}}
-                    value={val}
+                   valueLabelDisplay="auto"  style={{width : "90px"}}
+                   onChange={updateValFilter}
+                   value={valmobile}
                    max={1200}
-                   step={20}
+                  step={20}
                    />
                  </div>
                 

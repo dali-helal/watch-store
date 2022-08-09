@@ -1,0 +1,10 @@
+.local-bootstrap {
+    @import "~bootstrap/scss/bootstrap";
+  
+    .carousel-control-prev{
+      margin-left: 0.2rem !important;
+    }
+    .carousel-control-next{
+      margin-right: 0.2rem  !important;
+    }
+  }

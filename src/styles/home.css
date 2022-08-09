@@ -43,9 +43,6 @@
 .img-home img {
   width: 100%;
  }
-  html {
-    scroll-padding-top: 100px;
-  }
   .grid-container {
       display: grid;
       grid-template-columns: auto auto auto auto;

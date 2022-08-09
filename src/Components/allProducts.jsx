@@ -6,6 +6,7 @@ import FilterProducts from "./filterProducts.jsx"
 import Products from "./Products.jsx"
 import ImageSilder from "./Carousel/ImageSilder"
 import { silderData } from "./Carousel/silderData.js"
+import  ControlerCarousel from "./carousel"
 const AllProducts = () => {
     const handleClick=()=>{
         const element=document.querySelector('.list')
@@ -28,7 +29,8 @@ const AllProducts = () => {
            <input type="text" placeholder="search for products" />
          </div>
        </div>
-       <ImageSilder sildes={silderData} />
+       {/*<ImageSilder sildes={silderData} />*/}
+       <ControlerCarousel/>
        <div className="display-products">
         < FilterProducts/>
          <Products />

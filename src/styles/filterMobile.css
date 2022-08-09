@@ -9,9 +9,9 @@
     height: 0px ;
 }
 .slider-price-mobile{
-        padding :5px;
         display: flex;
         justify-content: center;
+        margin-top: 25px;
 }
 .container-price-mobile{
     overflow: hidden;
