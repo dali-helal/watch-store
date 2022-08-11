@@ -16,5 +16,10 @@
     }
 }
 @media (max-width :281px ) {
-    
+    .slider-image{
+
+        height: 200px;
+        padding-inline:0.6rem;
+      
+    }
 }

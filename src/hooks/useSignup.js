@@ -21,6 +21,7 @@ export const useSignup=()=>{
         if (response.ok){
             localStorage.setItem('user',JSON.stringify(json))
             setIsloading(false)
+            window.location.href = "/";
         }
      }
     return {signup,isloading,error}

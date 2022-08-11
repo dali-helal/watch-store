@@ -15,6 +15,7 @@ export const useLogin=()=>{
             }
             if(response.ok){
                 localStorage.setItem('user',JSON.stringify(json))
+                window.location.href = "/";
             }
         }
         return {login,error}
