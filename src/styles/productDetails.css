@@ -56,3 +56,12 @@
         width: 90%;
     }
 }
+@media (min-width : 281px ) and (max-width:680px){
+    .container-product-details img{
+        height: 170px;
+        width: 60%;
+    }
+    #details{
+        font-size: 17px !important;
+    }
+}

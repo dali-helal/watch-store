@@ -8,9 +8,21 @@
 }
 .container-mobile{
     display:  none;
+    position: sticky;
+    top: 90px ;
+    background: #f4f4f4;
+    margin-bottom: 10px ;
+    z-index: 5;
 }
 .all-products .filter-mobile{
     display: none !important;
+}
+.search-mobile{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   position: relative;
 }
 .search{
     box-shadow: 0px 0px 4px rgba(0,0,0,0.2) ;
@@ -23,6 +35,23 @@
     background: #FFFFFF;
     margin-left: 22px;
 }
+.dataResultMobile{
+    width: 220px;
+    min-height: 60px;
+    max-height: 120px;
+    background-color: white;
+    overflow-y: auto;
+    position: absolute;
+    top :100%;
+    right: 2% ;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2) ;
+}
+.dataResultMobile a{
+    text-decoration: none;
+    text-decoration-style: none;
+    color: #777777;
+  }
 .search input {
     border: 0px ;
     font-size: 13px ;
@@ -58,7 +87,6 @@
 }
 .open{
     width: 45% !important;
-
 }
 .display{
     height: 50px ;
@@ -88,21 +116,13 @@
         align-items: center;
         margin-top: 10px ;
         padding-inline:0.3rem;
+     
     }    
     .list{
         display: block;
     }
 }
-@media (width : 320px) {
-    .search input {
-        width: 130px;   
-        font-size: 13px ;
-    }
-    .btn-filter-mobile{
-        padding: 5px 15px ;
-     }
-  
-}
+
 @media (max-width :280px){
     .container-mobile{
         display: block;
