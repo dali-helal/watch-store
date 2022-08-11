@@ -34,7 +34,7 @@ const CartProduct = ({id ,marque, picture , price , quantity}) => {
 
             </div>
 
-            <h5>{price}TND</h5>
+            <h5>{price}$</h5>
             </div>
            
             <FaTrash  onClick={deleteProduct} style={{cursor:"pointer"}} className="icon-Trash" size={"30px"}/>

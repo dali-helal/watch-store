@@ -11,17 +11,13 @@
     position: sticky;
     top: 90px ;
     background: #f4f4f4;
-    margin-bottom: 10px ;
+    padding: 10px ;
     z-index: 5;
 }
 .all-products .filter-mobile{
     display: none !important;
 }
 .search-mobile{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
    position: relative;
 }
 .search{

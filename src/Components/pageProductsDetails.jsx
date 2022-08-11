@@ -34,7 +34,7 @@ const PageProductDetails = () => {
         <h5>{data.marque} watch </h5>
         <h4>{data.title}<br />Gender :{data.gender}<br />Style : Moderne</h4>
         <div id="add-to-cart">
-          <h6>{data.price} TND </h6>
+          <h6>{data.price} $ </h6>
           <button onClick={addProductToCart}>Add to cart </button>
         </div>
       </div>

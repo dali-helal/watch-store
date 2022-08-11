@@ -49,12 +49,13 @@
     align-items: center;  
   }
   .Product-search img{
-   height: 60px;
-   width: 60px;
+   height: 50px;
+   width: 50px;
+   margin: 0 5px;
   }
   .Product-search h4{
     margin: 10px;
-    font-size: 15px;
+    font-size: 10px;
   }
   @media (min-width : 700px) and (max-width:1024px){
     .searchInputs input{

@@ -46,7 +46,7 @@ const Home = () => {
                 ))}
             </div>
             <Link to={"/allproducts"}>
-                <button className="section-button">More Products</button>
+                <button className="section-button">All Products</button>
             </Link>
 
         </section >

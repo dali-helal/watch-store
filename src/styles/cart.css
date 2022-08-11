@@ -36,7 +36,6 @@
     border: none;
     background: #2196F3;
     color: white;
-
 }
 .total-panier h6{
     font-size: 20px;
@@ -49,7 +48,68 @@
  font-size: 20px;
  color: #8A8A8A;
 }
-
+.search-mobile-Cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #2196F3;
+    padding-inline: 5rem;
+    padding: 10px ;
+    position: relative;
+}
+.contaier-cart-search{
+    position: sticky;
+    top : 90px ;
+    z-index: 999;
+    background: #f4f4f4;
+    margin-bottom: 20px ;
+}
+.search-cart{
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2) ;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    padding: 20px 0px ;
+    background: #FFFFFF;
+    margin-left: 22px;
+    width: 65vw ;
+    position: relative;
+    
+  
+}
+.search-cart input {
+border: 0px ;
+font-size: 13px ;
+font-weight: 400;
+outline: none;
+background: #FFFFFF;
+width: 180px;
+margin: 0px 5px;
+}
+.search-cart .icon-search{
+    background :white ; 
+    color: #989898;  
+    margin: 0px 5px ;
+}
+.dataResultMobile-Cart{
+    width: 65vw ;
+    min-height: 60px;
+    max-height: 120px;
+    background-color: white;
+    overflow-y: auto;
+    position: absolute;
+    top :100%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2) ;
+}
+.dataResultMobile-Cart a{
+    text-decoration: none;
+    text-decoration-style: none;
+    color: #777777;
+  }
 @media (min-width : 700px ) and (max-width :1024px ) {
     .main{
         flex-direction: column;
