@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import {url} from "../api.js"
 export const useSignup=()=>{
    
      const [error,setError]=useState(null)
@@ -8,7 +8,7 @@ export const useSignup=()=>{
         setIsloading(true)
         setError(null)
 
-        const response=await fetch('https://watch-store-react-js.herokuapp.com/api/auth/signup',{
+        const response=await fetch(`${url}/api/auth/signup`,{
             method : "POST",
             headers :{ "Content-Type" : 'application/json'},
             body :JSON.stringify({email,password,name,phone})

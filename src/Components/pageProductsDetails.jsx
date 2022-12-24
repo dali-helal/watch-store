@@ -4,12 +4,13 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { addProduct } from "../redux/actions/ProductsActions";
 import "../styles/pageProductDetails.css"
+import {url} from "../api.js"
 const PageProductDetails = () => {
   const { id } = useParams();
   const dispatch = useDispatch()
   const [data, setData] = useState([])
   const fetchData = async () => {
-    const res = await fetch(`https://watch-store-react-js.herokuapp.com/api/watch/${id}`)
+    const res = await fetch(`${url}/api/watch/${id}`)
     const json = await res.json()
     console.log(json)
     setData(json)

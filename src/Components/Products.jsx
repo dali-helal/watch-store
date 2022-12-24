@@ -3,13 +3,14 @@ import { useState, useEffect } from "react";
 import {useSelector} from "react-redux"
 import ReactPaginate from 'react-paginate'
 import "../styles/products.css"
+import {url} from "../api.js"
 const Products = () => {
-    const  [products, setData] = useState([]) 
+    const [products,setData] = useState([]) 
     const [isPending,setIspending]=useState(true)
     const [pageNumber,setPageNumber]=useState(0)
    const params=useSelector((state)=>state.filter.PropFilter)
     const fetchData =async() => {
-            const res = await fetch(`https://watch-store-react-js.herokuapp.com/api/watch/getProducts`,{
+            const res = await fetch(`${url}/api/watch/getProducts`,{
                 method :"POST",
                 headers :{"Content-Type" : "application/json"},
                 body : JSON.stringify(params)
@@ -48,8 +49,6 @@ const Products = () => {
          disabledClassName={'paginationDisabled'}
          activeClassName={"paginationActive"}
         />}
-        
-      
         </section >
       
     );

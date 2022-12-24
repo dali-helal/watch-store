@@ -4,6 +4,7 @@ import { useSelector } from "react-redux"
 import { FaSearch, FaTimes } from "react-icons/fa"
 import { useEffect, useState } from "react"
 import "../styles/cart.css"
+import {url} from "../api.js"
 const Cart = () => {
    const data = useSelector((state) => state.allProducts.products)
    const priceTotale = useSelector((state) => state.allProducts.totalPrice)
@@ -11,7 +12,7 @@ const Cart = () => {
    const [itemSearch, setItemSearch] = useState('')
    const [filteredData, setFilteredData] = useState([]);
    const fetchData = async () => {
-      const res = await fetch('https://watch-store-react-js.herokuapp.com/api/watch')
+      const res = await fetch(`${url}/api/watch`)
       const json = await res.json()
       setData(json)
    }

@@ -1,12 +1,13 @@
 import { FaSearch, FaTimes } from "react-icons/fa"
 import "../styles/searchbar.css"
 import { useEffect, useState } from "react"
+import {url} from "../api.js"
 const SearchBar = () => {
     const [products, setData] = useState([])
     const [itemSearch, setItemSearch] = useState('')
     const [filteredData, setFilteredData] = useState([]);
     const fetchData = async () => {
-        const res = await fetch('https://watch-store-react-js.herokuapp.com/api/watch')
+        const res = await fetch(`${url}/api/watch`)
         const json = await res.json()
         setData(json)
     }

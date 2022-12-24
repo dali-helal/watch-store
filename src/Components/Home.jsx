@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom'
 import { useEffect, useState } from "react";
 import ProductDetails from "./ProductDetails"
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"
+import {url} from "../api.js"
 const Home = () => {
     const [data, setData] = useState([])
     const fetchData = async () => {
-        const response = await fetch('https://watch-store-react-js.herokuapp.com/api/watch/FeaturedProducts')
+        const response = await fetch(`${url}/api/watch/FeaturedProducts`)
         const json = await response.json()
         setData(json)
     }
@@ -23,7 +24,6 @@ const Home = () => {
                 <h4>lorem Ipsum is simply dummy text of the printing
                     and typesetting industry. Lorem Ipsum has been the
                     nd typesetting industry. Lorem Ipsum has been the
-                  
                 </h4>
 
                 <a href="#FeaturedProducts">
@@ -48,13 +48,11 @@ const Home = () => {
             <Link to={"/allproducts"}>
                 <button className="section-button">All Products</button>
             </Link>
-
         </section >
 
         <div className="footer">
-
             <div>
-                for more information ,Follow us on :
+                for more information,Follow us on :
             </div>
             <div className="footer-icons">
                 <FaFacebook size={"2rem"} />

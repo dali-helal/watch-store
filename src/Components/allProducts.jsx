@@ -6,6 +6,8 @@ import FilterProducts from "./filterProducts.jsx"
 import Products from "./Products.jsx"
 import  ControlerCarousel from "./carousel"
 import { useEffect, useState } from "react"
+
+import {url} from "../api.js"
 const AllProducts = () => {
     const handleClick=()=>{
         const element=document.querySelector('.list')
@@ -15,7 +17,8 @@ const AllProducts = () => {
     const [itemSearch, setItemSearch] = useState('')
     const [filteredData, setFilteredData] = useState([]);
     const fetchData = async () => {
-        const res = await fetch('https://watch-store-react-js.herokuapp.com/api/watch')
+        const res = await fetch(`${url}/api/watch`)
+        
         const json = await res.json()
         setData(json)
     }
